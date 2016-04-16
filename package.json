@@ -1,8 +1,11 @@
 {
-  "name": "queue",
+  "name": "jsQueue",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple queue data structure for javascript",
   "main": "index.js",
+  "repository" : {
+    "url" : "https://github.com/SWoskowiak/jsQueue"
+  },
   "scripts": {
     "test": "mocha test/*",
     "test-coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"

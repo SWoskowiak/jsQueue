@@ -1,5 +1,9 @@
 # Queue
 
+[![Build Status](https://travis-ci.org/SWoskowiak/jsQueue.svg?branch=master)](https://travis-ci.org/SWoskowiak/jsQueue)
+
+[![Coverage Status](https://coveralls.io/repos/github/SWoskowiak/jsQueue/badge.svg?branch=master)](https://coveralls.io/github/SWoskowiak/jsQueue?branch=master)
+
 Queue data structure implementation in javascript.
 
 While you can mimic queue(FIFO) behavior via arrays like so:
@@ -27,6 +31,14 @@ operate in O(1) time!
 
 Check out index.js to see a very simple implementation of this behavior.
 
+
+## Install
+
+```Javascript
+
+  npm install jsQueue
+
+```
 
 ## Usage
 
