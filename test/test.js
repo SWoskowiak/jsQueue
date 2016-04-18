@@ -32,6 +32,19 @@ describe('Queue', function () {
 
       expect(queue.peek()).to.equal('some');
     });
+
+    it ('Clears queue of elements', () => {
+      queue.enqueue('some').enqueue('test').enqueue('data');
+
+      expect(queue.clear()).to.have.property('size').eql(0);
+    });
+
+    it ('Runs through a basic set of operations without fail', () => {
+      queue.enqueue('some').enqueue('test').enqueue('data').clear().enqueue('hello');
+
+      expect(queue.dequeue()).to.equal('hello');
+      expect(queue).to.have.property('size').eql(0);
+    });
   });
 
 });

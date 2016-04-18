@@ -35,6 +35,15 @@ class Queue {
     }
   }
 
+  // Clear out the queue
+  clear() {
+    while (this.oldIndex < this.newIndex ) {
+      delete this.storage[this.oldIndex];
+      this.oldIndex++;
+    }
+    return this;
+  }
+
   // Whats the next value to
   peek() {
     return this.storage[this.oldIndex];
